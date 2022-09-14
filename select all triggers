@@ -1,0 +1,5 @@
+
+select trigger_name, trigger_type,
+    triggering_event, table_name,
+    status, trigger_body
+from ALL_TRIGGERS
