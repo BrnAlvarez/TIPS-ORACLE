@@ -1,0 +1,15 @@
+Sql tip
+
+select SUBSTR(salida,0,(INSTR(salida,delimiter,-1))) from dual;
+
+
+Example
+salida 'Hello - Commander - Pretty - River - Not Empty'
+delimiter '-'
+
+
+select SUBSTR('Hello - Commander - Pretty - River - Not Empty',0,(INSTR('Hello - Commander - Pretty - River - Not Empty','-',-1))) from dual;
+
+
+//output
+Hello - Commander - Pretty - River -
